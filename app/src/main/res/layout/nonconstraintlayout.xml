@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".MainActivity"
+		android:padding="10dp">
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+		>
+			<TextView
+					android:id="@+id/firstname_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="First Name"
+					android:textSize="18dp"
+					android:layout_weight="1"
+
+			/>
+			<TextView
+					android:id="@+id/lastname_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Last Name"
+					android:textSize="18dp"
+					android:layout_weight="1"
+					android:layout_marginLeft="20dp"
+			/>
+
+		</LinearLayout>
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+		>
+			<EditText
+					android:id="@+id/first_name_edit"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:background="#DDD"
+					android:hint="first_name"
+					android:paddingLeft="10dp"
+					android:inputType="text"
+					android:lineSpacingExtra="8sp"
+					android:minHeight="48dp"
+					tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"/>
+			<EditText
+					android:layout_marginLeft="20dp"
+					android:minHeight="48dp"
+					android:id="@+id/last_name_edit"
+					android:layout_width="wrap_content"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:hint="last_name"
+					android:paddingLeft="10dp"
+					android:inputType="text"
+					android:background="#DDD"
+			/>
+
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+			<TextView
+					android:id="@+id/gender_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="gender"
+					android:textSize="18sp"
+					android:layout_marginTop="16dp"/>
+
+			<RadioGroup
+					android:id="@+id/option"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="12dp">
+
+				<RadioButton
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/male_option"
+						android:text="male"
+						android:textSize="18sp"
+				/>
+
+				<RadioButton
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/female_option"
+						android:text="Female"
+						android:textSize="18sp"
+				/>
+
+			</RadioGroup>
+
+		</LinearLayout>
+		<TextView
+				android:id="@+id/birthday_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Birthday"
+				android:textSize="18dp"
+
+		/>
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+		>
+			<EditText
+					android:id="@+id/birthday_edit"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="#DDD"
+					android:minHeight="48dp"
+					android:layout_weight="1"
+					android:hint="Birthday"
+					android:paddingLeft="10dp"
+					android:inputType="date"
+			/>
+			<Button
+					android:id="@+id/btn_select"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="Select"
+					android:textColor="@color/black"
+					android:backgroundTint="#DDD"
+					android:layout_marginLeft="10dp"
+			/>
+
+
+		</LinearLayout>
+		<TextView
+				android:id="@+id/address_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Address"
+				android:textSize="18dp"
+
+		/>
+		<EditText
+				android:id="@+id/address_edit"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="#DDD"
+				android:minHeight="48dp"
+				android:hint="Address"
+				android:paddingLeft="10dp"
+				android:inputType="text"
+
+		/>
+		<TextView
+				android:id="@+id/email_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Email"
+				android:textSize="18dp"
+
+		/>
+		<EditText
+				android:id="@+id/email_edit"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="#DDD"
+				android:minHeight="48dp"
+				android:hint="Email"
+				android:paddingLeft="10dp"
+				android:inputType="text"
+
+		/>
+		<CheckBox
+				android:id="@+id/checkbox"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="I agree to Terms of Use"
+				android:textSize="18dp"
+		/>
+		<Button
+				android:id="@+id/register_btn"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Register"
+				android:backgroundTint="#DDD"
+				android:textColor="@color/black"
+				android:layout_gravity="center"
+		/>
+
+	</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
